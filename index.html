@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Torn paper</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>That's torn it</h1>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    
+    <svg>
+        <filter id="torn">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="6" seed="5" />
+            <feDisplacementMap in="SourceGraphic" scale="12" />
+        </filter>
+    </svg>
+    <script src="./main.js"></script>
+</body>
+</html>
